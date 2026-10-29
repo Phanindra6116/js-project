@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>E-commerce </title>
+</head>
+<body>
+
+    <h2>E-commerce website </h2>
+<!-- prod name -->
+    <input type="text" id="product" placeholder="Product Name" required><br><br>
+<!-- prod price -->
+    <input type="number" id="price" placeholder="Product Price" required><br><br>
+<!-- sel cat -->
+    <select id="category"><br><br>
+        <option value="">Select Category</option>
+        <option value="Electronics">Electronics</option>
+        <option value="Clothing">Clothing</option>
+        <option value="Books">Books</option>
+        <option value="Food">Food</option>
+        <option value="Accessories">Accessories</option>
+    </select><br><br>
+<!-- quantity -->
+    <input type="number" id="quantity" placeholder="Quantity" required><br><br>
+<!-- add btn -->
+    <button onclick="addProduct()">Add to Cart</button><br>
+
+    <h3>Cart Products</h3>
+
+    <table border="1" cellpadding="10">
+        <thead>
+            <tr>
+                <th>S.No</th>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>Category</th>
+                <th>Quantity</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+
+        <tbody id="output"></tbody>
+    </table>
+
+    <br>
+
+    <!-- Clear All Button -->
+    <button onclick="clearAll()">Clear All</button>
+
+    <script src="./js.js"></script>
+
+</body>
+</html>
